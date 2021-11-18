@@ -1,62 +1,267 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#E4EDE7F6"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView6"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#3F51B5"
-        android:gravity="center_vertical"
-        android:paddingHorizontal="30dp"
-        android:text="Torre del Reloj"
-        android:textAlignment="gravity"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@color/white"
-        android:textSize="25dp" />
+        android:layout_height="match_parent"
+        android:background="#E4EDE7F6"
+        android:orientation="vertical"
+        android:layout_margin="3dp"
+        tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="30dp"
-        app:srcCompat="@drawable/menu"
-        app:tint="@color/white" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#3F51B5"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="15dp"
+            android:text="Torre del Reloj"
+            android:textAlignment="gravity"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@id/textView6"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/torre_reloj" />
+            <ImageView
+            android:id="@+id/menu"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@drawable/menu"
+            app:tint="@color/white" />
 
-    <TextView
-        android:id="@+id/descripcion"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/imageView4"
-        android:text="Descripción"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:layout_marginHorizontal="30dp"/>
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/textView6"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/torre_reloj"
+            android:layout_marginTop="1dp"/>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginHorizontal="30dp"
-        android:layout_below="@id/descripcion"
-        android:text="La Torre del Reloj es la puerta de entrada principal al centro histórico de Cartagena"
-        android:textColor="@color/black"
-        android:textSize="16dp" />
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView4"
+            android:text="Descripción"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:background="#3F51B5"
+            android:textAlignment="center"
+            android:paddingHorizontal="15dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="5dp"/>
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/contenidoDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descripcion"
+            android:layout_marginTop="1dp"
+            android:paddingHorizontal="10dp"
+            android:text="La Puerta del Reloj, Torre del Reloj o Boca del Puente o Plaza Internacional Carlos Campillo es la puerta de entrada principal al centro histórico de Cartagena de Indias en Colombia y la entrada original a la ciudad fortificada (o mejor conocido en la actualidad como el Sector y/o Ciudad Amurallada). Está ubicado entre las plazas de Independencia y de los Coches. El nombre 'Puerta del Reloj' responde al reloj con el que fue coronada la torre a principios del siglo XVIII. "
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="18dp"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:id="@+id/situacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contenidoDescripcion"
+            android:text="Situación"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:background="#3F51B5"
+            android:textAlignment="center"
+            android:paddingHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TableRow
+            android:id="@+id/contenedorPais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/situacion"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/pais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="País"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20dp"
+                android:paddingHorizontal="10dp"/>
+
+            <ImageView
+                android:id="@+id/bandera"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                app:srcCompat="@drawable/colombia" />
+
+            <TextView
+                android:id="@+id/contenidoPais"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:paddingHorizontal="5dp"
+                android:text="Colombia"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/contenedorDepartamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contenedorPais"
+            android:layout_marginVertical="1dp"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/departamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Departamento"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20dp"
+                android:paddingHorizontal="10dp" />
+
+            <ImageView
+                android:id="@+id/bandera2"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_weight="4.5"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/bolivar" />
+
+            <TextView
+                android:id="@+id/contenidodepartamento"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:text="Bolivar"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="18dp"
+                android:paddingHorizontal="5dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/contenedorTemperatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contenedorDepartamento"
+            android:layout_marginVertical="1dp"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/temperatura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="Temperatura"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20dp"
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:id="@+id/contenidoTemperatura"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="25 a 31 °C"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="18dp"
+                android:paddingHorizontal="5dp"/>
+        </TableRow>
+
+        <TextView
+            android:id="@+id/sitios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contenedorTemperatura"
+            android:text="Sitios de interes"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:background="#3F51B5"
+            android:textAlignment="center"
+            android:paddingHorizontal="15dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TableRow
+            android:id="@+id/contenedorRestaurantes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sitios"
+            android:layout_marginVertical="1dp"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/restaurantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="Restaurantes"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20dp"
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:id="@+id/contenidoRestaurantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="The Clock Pub, Juan Valdez, Sabor de Montaña."
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="18dp"
+                android:paddingHorizontal="5dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/contenedorHoteles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contenedorRestaurantes"
+            android:layout_marginVertical="1dp"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/hoteles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="Hoteles"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20dp"
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:id="@+id/contenidoHoteles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Santa Catalina Hotel, Hotel NH Cartagena."
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="18dp"
+                android:paddingHorizontal="5dp"/>
+        </TableRow>
+
+    </RelativeLayout>
+
+</ScrollView>
