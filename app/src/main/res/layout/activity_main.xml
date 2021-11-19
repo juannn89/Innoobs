@@ -12,52 +12,19 @@
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#3F51B5"
+        android:background="#FD9A20"
         android:gravity="center_vertical"
-        android:paddingHorizontal="30dp"
-        android:text="Cartagena"
+        android:paddingHorizontal="15dp"
+        android:text="Torre del Reloj"
         android:textAlignment="gravity"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/white"
         android:textSize="25dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="30dp"
-        app:srcCompat="@drawable/menu"
-        app:tint="@color/white" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="120dp"
-        android:layout_height="100dp"
-        android:layout_below="@id/textView6"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/torre_reloj" />
-
-    <TextView
-        android:id="@+id/textView"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCartagena"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_below="@id/imageView"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_toRightOf="@id/imageView4"
-        android:text="La Torre del Reloj es la puerta de entrada principal al centro histórico de Cartagena"
-        android:textColor="@color/black"
-        android:textSize="16dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Keren"
-        android:layout_below="@id/textView"/>
-
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView6"
+        />
 </RelativeLayout>

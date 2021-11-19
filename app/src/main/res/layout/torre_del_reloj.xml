@@ -18,7 +18,7 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#3F51B5"
+            android:background="#FD9A20"
             android:gravity="center_vertical"
             android:paddingHorizontal="15dp"
             android:text="Torre del Reloj"
