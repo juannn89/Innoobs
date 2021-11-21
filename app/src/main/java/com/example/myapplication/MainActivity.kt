@@ -7,15 +7,15 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.databinding.CardLayoutBinding
 
-data class Poi(val nombre:String, val descripcion:String, val sitio:Int)
+data class Poi(val nombre:String, val descripcion:String, val sitio:Int, val puntaje:Int)
 
 class MainActivity : AppCompatActivity() {
 
     val pois = listOf(
-        Poi(nombre="Torre del Reloj", descripcion= "Lugar de Cartagena", sitio= R.drawable.torre_reloj),
-        Poi(nombre="Torre del Reloj", descripcion= "Lugar de Cartagena", sitio= R.drawable.torre_reloj),
-        Poi(nombre="Torre del Reloj", descripcion= "Lugar de Cartagena", sitio= R.drawable.torre_reloj),
-        Poi(nombre="Torre del Reloj", descripcion= "Lugar de Cartagena", sitio= R.drawable.torre_reloj),
+        Poi(nombre="Torre del Reloj", descripcion= "Lugar de Cartagena", sitio= R.drawable.torre_reloj, puntaje= 3),
+        Poi(nombre="Torre del Reloj", descripcion= "Lugar de Cartagena", sitio= R.drawable.torre_reloj, puntaje= 3),
+        Poi(nombre="Torre del Reloj", descripcion= "Lugar de Cartagena", sitio= R.drawable.torre_reloj, puntaje= 3),
+        Poi(nombre="Torre del Reloj", descripcion= "Lugar de Cartagena", sitio= R.drawable.torre_reloj, puntaje= 3),
         )
 
     override fun onCreate(savedInstanceState: Bundle?) {

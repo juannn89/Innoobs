@@ -29,4 +29,11 @@
         android:text="TextView"
         android:layout_below="@+id/tvNombre"
         android:layout_toRightOf="@+id/ivPoi"/>
+
+    <RatingBar
+        android:id="@+id/rPuntaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDescripcion"
+        android:layout_toRightOf="@+id/ivPoi"/>
 </RelativeLayout>
