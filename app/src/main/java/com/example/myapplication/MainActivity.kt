@@ -1,33 +1,29 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.databinding.ActivityMainBinding
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import java.text.FieldPosition
 
 data class Poi(val nombre:String, val descripcion:String, val sitio:String, var sitioId:Int, val puntaje:Int)
 
 class MainActivity : AppCompatActivity() {
 
-
-    /*
-    */
-
-    /*val pois = listOf(
-        Poi(nombre="Torre del Reloj", descripcion= "Está ubicado entre las plazas de Independencia y de los Coches. El nombre 'Puerta del Reloj' responde al reloj con el que fue coronada la torre a principios del siglo XVIII.", sitio= R.drawable.torre_reloj, puntaje= 3),
-        Poi(nombre="Castillo de San Felipe", descripcion= "Su nombre real es Fuerte de San Felipe de Barajas. Está situado sobre un cerro llamado San Lázaro y fue construido en 1657 durante la época colonial española.", sitio= R.drawable.san_felipe, puntaje= 3),
-        Poi(nombre="Islas del Rosario", descripcion= "Es un pequeño archipiélago formado por unas 28 islas, que es parte de la zona insular de Cartagena de indias, con una superficie terrestre de 20 hectáreas ubicado frente a las costas del Departamento de Bolívar, a la misma latitud que la península de Barú.", sitio= R.drawable.isla_rosario, puntaje= 3),
-        )*/
     var pois:List<Poi> = listOf()
+    private lateinit var bindindg: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-       /* val resources= application.assets.list(String())
-        val exist= applicationContext.assets.list(String())?.contains("data.json")*/
+        bindindg = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(bindindg.root)
 
         val listaString = applicationContext.assets.readFile("data.json")
         var listaType = object: TypeToken<List<Poi>>(){}.type
@@ -36,10 +32,29 @@ class MainActivity : AppCompatActivity() {
         pois.forEach({it.sitioId=applicationContext.resIdByName(it.sitio, "drawable")})
     }
 
+    /*fun onClick (){
+        val intent = Intent(this, torre_del_reloj::class.java)
+        startActivity(intent)
+    }*/
+
     override fun onStart() {
         super.onStart()
-        val rv = findViewById<RecyclerView>(R.id.rvCartagena)
-        rv.adapter = PoiAdapter(pois)
+        val rv = bindindg.rvCartagena
+        val adapter = PoiAdapter(pois)
+        rv.adapter = adapter
         rv.layoutManager = LinearLayoutManager(this)
+        rv.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
+        adapter.setOnClickListener(object : PoiAdapter.onClickListener{
+            override fun onClick(position: Int) {
+                //Toast.makeText(this@MainActivity, "test. $position", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this@MainActivity, NewActivity::class.java)
+                intent.putExtra("nombre", pois[position].nombre)
+                intent.putExtra("descripcion", pois[position].descripcion)
+                intent.putExtra("sitioId", pois[position].sitioId)
+                startActivity(intent)
+            }
+
+        })
     }
+
 }

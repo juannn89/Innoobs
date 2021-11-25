@@ -27,7 +27,7 @@
             android:textColor="@color/white"
             android:textSize="25dp" />
 
-            <ImageView
+        <ImageView
             android:id="@+id/menu"
             android:layout_width="50dp"
             android:layout_height="60dp"
@@ -264,4 +264,3 @@
     </RelativeLayout>
 
 </ScrollView>
-

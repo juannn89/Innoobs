@@ -1,12 +1,12 @@
 [
   {
-    "nombre": "Torre del Reloj2",
+    "nombre": "Torre del Reloj",
     "descripcion": "Está ubicado entre las plazas de Independencia y de los Coches. El nombre 'Puerta del Reloj' responde al reloj con el que fue coronada la torre a principios del siglo XVIII.",
     "sitio": "torre_reloj",
     "puntaje": 3
   },
   {
-    "nombre": "Castillo de San Felipe2",
+    "nombre": "Castillo de San Felipe",
     "descripcion": "Su nombre real es Fuerte de San Felipe de Barajas. Está situado sobre un cerro llamado San Lázaro y fue construido en 1657 durante la época colonial española.",
     "sitio": "san_felipe",
     "puntaje": 3
