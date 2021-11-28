@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+<!--
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
@@ -20,6 +21,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/white"
         android:textSize="25dp" />
+-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvCartagena"

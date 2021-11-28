@@ -3,6 +3,7 @@ package com.example.myapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
@@ -32,10 +33,10 @@ class MainActivity : AppCompatActivity() {
         pois.forEach({it.sitioId=applicationContext.resIdByName(it.sitio, "drawable")})
     }
 
-    /*fun onClick (){
-        val intent = Intent(this, torre_del_reloj::class.java)
-        startActivity(intent)
-    }*/
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.setting_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
 
     override fun onStart() {
         super.onStart()
