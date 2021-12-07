@@ -5,15 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
-import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import java.text.FieldPosition
 
 data class Poi(val nombre:String, val descripcion:String, val sitio:String, var sitioId:Int, val puntaje:Int)
 
@@ -27,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         bindindg = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bindindg.root)
 
-        val listaString = applicationContext.assets.readFile("data.json")
+        val listaString = applicationContext.assets.readFile("db.json")
         var listaType = object: TypeToken<List<Poi>>(){}.type
         var gson = Gson()
         pois = gson.fromJson(listaString, listaType)
