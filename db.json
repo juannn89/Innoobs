@@ -1,4 +1,5 @@
-{ "pois": [  {
+[  
+  {
     "nombre": "Torre del Reloj",
     "descripcion": "Está ubicado entre las plazas de Independencia y de los Coches. El nombre 'Puerta del Reloj' responde al reloj con el que fue coronada la torre a principios del siglo XVIII.",
     "sitio": "torre_reloj",
@@ -15,6 +16,6 @@
     "descripcion": "Es un pequeño archipiélago formado por unas 28 islas, que es parte de la zona insular de Cartagena de indias, con una superficie terrestre de 20 hectáreas ubicado frente a las costas del Departamento de Bolívar, a la misma latitud que la península de Barú.",
     "sitio": "isla_rosario",
     "puntaje": 3
-  } ]
-}
+  } 
+]
 
