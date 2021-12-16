@@ -1,7 +1,7 @@
 { "pois": 
  [  
   {
-    "nombre": "Torre del Reloj",
+    "nombre": "Torre del Reloj prueba Json Server",
     "descripcion": "Está ubicado entre las plazas de Independencia y de los Coches. El nombre 'Puerta del Reloj' responde al reloj con el que fue coronada la torre a principios del siglo XVIII.",
     "sitio": "torre_reloj",
     "puntaje": 3
