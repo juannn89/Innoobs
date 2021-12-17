@@ -1,36 +1,22 @@
 { "pois": 
  [  
   {
-	"nombre": "Torre del Reloj",
-	"descripcion": "Está ubicado entre las plazas de Independencia y de los Coches. El nombre 'Puerta del Reloj' responde al reloj con el que fue coronada la torre a principios del siglo XVIII.",
-	"sitio": "torre_reloj",
-	"puntaje": "3",
-	"restaurantes": "Tienda Café Sabor de Montaña, The Clock Pub, Juan Valdez Café, Cancha Cevicheria, Cancha Cevicheria",
-	"hoteles": "Alfiz Hotel, Hotel Casa del Arzobispado, Movich Hotels Cartagena de Indias, NH Cartagena Urban Royal, Santa Catalina Hotel",
+    "nombre": "Torre del Reloj",
+    "descripcion": "Está ubicado entre las plazas de Independencia y de los Coches. El nombre 'Puerta del Reloj' responde al reloj con el que fue coronada la torre a principios del siglo XVIII.",
+    "sitio": "torre_reloj",
+    "puntaje": 3
   },
   {
-	"nombre": "Castillo de San Felipe",
-	"descripcion": "Su nombre real es Fuerte de San Felipe de Barajas. Está situado sobre un cerro llamado San Lázaro y fue construido en 1657 durante la época colonial española.",
-	"sitio": "san_felipe",
-	"puntaje": "3",
-	"restaurantes": "Cafe San Alberto, La Colonia Drink & Foods, Patacon Con Todo, Mirador del Caraj0, Clero Restaurante",
-	"hoteles": "San Lazaro Art Hotel, Hotel CASA LOLA Deluxe Gallery, Hotel Boutique Casa Isabel, Hotel Capellan de Getsemaní, Casa Canabal Hotel Boutique",
+    "nombre": "Castillo de San Felipe",
+    "descripcion": "Su nombre real es Fuerte de San Felipe de Barajas. Está situado sobre un cerro llamado San Lázaro y fue construido en 1657 durante la época colonial española.",
+    "sitio": "san_felipe",
+    "puntaje": 3
   },
   {
-	"nombre": "Islas del Rosario",
-	"descripcion": "Es un pequeño archipiélago formado por unas 28 islas, que es parte de la zona insular de Cartagena de indias, con una superficie terrestre de 20 hectáreas ubicado frente a las costas del Departamento de Bolívar, a la misma latitud que la península de Barú.",
-	"sitio": "isla_rosario",
-	"puntaje": "3",
-	"restaurantes": "Tienda Café Sabor de Montaña, Sol & Papaya, Hugo, Restaurante Playa Scondida, Restaurante Bar Pacho Lay",
-	"hoteles": "Coralina Island Hotel, Cocoliso Island Resort, ecohotel el hamaquero, Hotel Isla del Sol, Barefoot Luxury Hostel",
-  },
-  {
-	"nombre": "Murallas de Cartagena",
-	"descripcion": "Fue construida a finales del siglo XVI para la defensa de la ciudad. Su construcción inició el 8 de septiembre de 1614, después del ataque del legendario Sir Francis Drake y por orden del rey Felipe III. El arquitecto italiano, Carlos de Roda Antonelli, fue el encargado de la primera etapa de construcción, la cual tomó 15 años, en la que se levantaron 15 baluartes con clara influencia del estilo italiano. Luego se encargó en 1608, Cristóbal de Roda, quien fortificaría casi toda la parte de la ciudad que da al mar abierto.",
-	"sitio": "murallas_cartagena",
-	"puntaje": "3",
-	"restaurantes": "Tienda Café Sabor de Montaña, Bastión Bistró, Jardin Cavaletos, La Vieja Guardia Fish&Beer, Restaurante Candé",
-	"hoteles": "Hotel Cartagena Plaza, Hotel Casa San Agustin, Alfiz Hotel, Casa Pombo, Casa Pombo",
+    "nombre": "Islas del Rosario",
+    "descripcion": "Es un pequeño archipiélago formado por unas 28 islas, que es parte de la zona insular de Cartagena de indias, con una superficie terrestre de 20 hectáreas ubicado frente a las costas del Departamento de Bolívar, a la misma latitud que la península de Barú.",
+    "sitio": "isla_rosario",
+    "puntaje": 3
   }
 ]
 }
