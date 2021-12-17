@@ -31,22 +31,6 @@
 	"puntaje": "3",
 	"restaurantes": "Tienda Café Sabor de Montaña, Bastión Bistró, Jardin Cavaletos, La Vieja Guardia Fish&Beer, Restaurante Candé",
 	"hoteles": "Hotel Cartagena Plaza, Hotel Casa San Agustin, Alfiz Hotel, Casa Pombo, Casa Pombo",
-  },
-  {
-	"nombre": "Península de Barú",
-	"descripcion": "Esta paradisíaca isla se encuentra en el Caribe a apenas a 45 minutos de Cartagena de Indias. Es una atracción natural que destaca por sus aguas color turquesa, arena muy blanca y la amabilidad de su gente. Aunque la casi todas sus playas son privadas, hay una en especial que destaca entre todas y esto no necesariamente se deba a que sea la única playa pública: Playa Blanca. En esta podrás disfrutar de sus olas, de la arena fina y de una vista increíble sobre una bahía en la que el sol baña todos los espacios. Es aquí, también, donde podrás disfrutar de platillos deliciosos preparados por locales, artesanías y servicios turísticos como traslados, alquiler de cabañas y sombrillas. Playa Blanca es la joya de Isla de Baru, donde también podrás pernoctar y compartir junto a familias que aún residen en esta porción de tierra con abundante vegetación.",
-	"sitio": "peninsula_baru",
-	"puntaje": "3",
-	"restaurantes": "Hugo, Restaurante Playa Scondida, Restaurante Bar Pacho Lay, Gafita beach, Pesca del Dia",
-	"hoteles": "Hotel Las Islas, Hotel Playa Manglares Isla Baru, Baru Playa Eco Beach Resort, Hotel & Resort Agua Azul, Nuestros Tres Tesoro",
-  },
-  {
-	"nombre": "Archipiélago de San Bernardo",
-	"descripcion": "El Archipiélago tiene una extensión aproximada de 255 km² e incluye un conjunto de ocho islas, un islote artificial y una serie de bancos y bajos coralinos de poca profundidad Desde el año1996, el archipiélago fue adherido al Parque Nacional Corales del Rosario, por el Ministerio del Medio Ambiente. Su nombre oficial es Isla de San Bernardo y ocupa el extremo norte del golfo. Se la reparten los nativos con familias antioqueñas que tienen allí sus casas de recreo. Hay también puesto de salud y un colegio. En sus diez islas es posible sumergirse en las aguas del mar sin naufragar en excesos de comida, bulla, congestión y licor. Solo se corre el riesgo de hundirse embriagado en el apacible rumor del mar.",
-	"sitio": "archipielago_sanbernardo",
-	"puntaje": "3",
-	"restaurantes": "Restaurante Dubai, Canto de Caracola, El Refugio de Petra, Bar Restaurante Kapito Harri, Che Restaurante",
-	"hoteles": "Mistica Island Hostel, Quinta del Mar Tintipan, Hotel Isla Mucura, Mistica Island Hostel, Hotel Puntanorte",
   }
 ]
 }
