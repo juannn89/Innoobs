@@ -16,7 +16,9 @@
 	"sitio": "san_felipe",
 	"puntaje": "3",
 	"restaurantes": "Cafe San Alberto, La Colonia Drink & Foods, Patacon Con Todo, Mirador del Caraj0, Clero Restaurante",
-	"hoteles": "San Lazaro Art Hotel, Hotel CASA LOLA Deluxe Gallery, Hotel Boutique Casa Isabel, Hotel Capellan de Getsemaní, Casa Canabal Hotel Boutique"
+	"hoteles": "San Lazaro Art Hotel, Hotel CASA LOLA Deluxe Gallery, Hotel Boutique Casa Isabel, Hotel Capellan de Getsemaní, Casa Canabal Hotel Boutique",
+	"latitud": 10.4226899, 
+	"longitud": -75.5395037  
   },
   {
 	"nombre": "Islas del Rosario",
@@ -24,7 +26,9 @@
 	"sitio": "isla_rosario",
 	"puntaje": "3",
 	"restaurantes": "Tienda Café Sabor de Montaña, Sol & Papaya, Hugo, Restaurante Playa Scondida, Restaurante Bar Pacho Lay",
-	"hoteles": "Coralina Island Hotel, Cocoliso Island Resort, ecohotel el hamaquero, Hotel Isla del Sol, Barefoot Luxury Hostel"
+	"hoteles": "Coralina Island Hotel, Cocoliso Island Resort, ecohotel el hamaquero, Hotel Isla del Sol, Barefoot Luxury Hostel",
+	"latitud": 10.1970113, 
+	"longitud": -75.7954196    
   },
   {
 	"nombre": "Murallas de Cartagena",
@@ -32,7 +36,9 @@
 	"sitio": "murallas_cartagena",
 	"puntaje": "3",
 	"restaurantes": "Tienda Café Sabor de Montaña, Bastión Bistró, Jardin Cavaletos, La Vieja Guardia Fish&Beer, Restaurante Candé",
-	"hoteles": "Hotel Cartagena Plaza, Hotel Casa San Agustin, Alfiz Hotel, Casa Pombo, Casa Pombo"
+	"hoteles": "Hotel Cartagena Plaza, Hotel Casa San Agustin, Alfiz Hotel, Casa Pombo, Casa Pombo",
+	"latitud": 10.4295916, 
+	"longitud": -75.5450214 
   },
   {
 	"nombre": "Península de Barú",
@@ -40,7 +46,9 @@
 	"sitio": "peninsula_baru",
 	"puntaje": "3",
 	"restaurantes": "Hugo, Restaurante Playa Scondida, Restaurante Bar Pacho Lay, Gafita beach, Pesca del Dia",
-	"hoteles": "Hotel Las Islas, Hotel Playa Manglares Isla Baru, Baru Playa Eco Beach Resort, Hotel & Resort Agua Azul, Nuestros Tres Tesoro"
+	"hoteles": "Hotel Las Islas, Hotel Playa Manglares Isla Baru, Baru Playa Eco Beach Resort, Hotel & Resort Agua Azul, Nuestros Tres Tesoro",
+	"latitud": 10.1671517, 
+	"longitud": -75.6684926 
   },
   {
 	"nombre": "Archipiélago de San Bernardo",
@@ -48,7 +56,9 @@
 	"sitio": "archipielago_sanbernardo",
 	"puntaje": "3",
 	"restaurantes": "Restaurante Dubai, Canto de Caracola, El Refugio de Petra, Bar Restaurante Kapito Harri, Che Restaurante",
-	"hoteles": "Mistica Island Hostel, Quinta del Mar Tintipan, Hotel Isla Mucura, Mistica Island Hostel, Hotel Puntanorte"
+	"hoteles": "Mistica Island Hostel, Quinta del Mar Tintipan, Hotel Isla Mucura, Mistica Island Hostel, Hotel Puntanorte",
+	"latitud": 9.7197219, 
+	"longitud": -75.7915326   
   }
 ]
 }
