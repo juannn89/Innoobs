@@ -6,7 +6,9 @@
 	"sitio": "torre_reloj",
 	"puntaje": "3",
 	"restaurantes": "Tienda Café Sabor de Montaña, The Clock Pub, Juan Valdez Café, Cancha Cevicheria, Cancha Cevicheria",
-	"hoteles": "Alfiz Hotel, Hotel Casa del Arzobispado, Movich Hotels Cartagena de Indias, NH Cartagena Urban Royal, Santa Catalina Hotel"
+	"hoteles": "Alfiz Hotel, Hotel Casa del Arzobispado, Movich Hotels Cartagena de Indias, NH Cartagena Urban Royal, Santa Catalina Hotel",
+	"latitud": 10.39972,
+	"longitud": -75.51444
   },
   {
 	"nombre": "Castillo de San Felipe",
