@@ -26,12 +26,13 @@ class PoiAdapter(val pois:List<Poi>):RecyclerView.Adapter<PoiAdapter.ViewHolder>
         var nombre: TextView
         var descripcion: TextView
         var sitio: ImageView
-        lateinit var puntaje: RatingBar
+        var puntaje: RatingBar
 
         init {
             nombre = v.findViewById(R.id.tvNombre)
             descripcion = v.findViewById(R.id.tvDescripcion)
             sitio = v.findViewById(R.id.ivPoi)
+            puntaje = v.findViewById(R.id.rPuntaje)
 
             v.setOnClickListener{
                 listener.onClick(bindingAdapterPosition)
@@ -49,7 +50,7 @@ class PoiAdapter(val pois:List<Poi>):RecyclerView.Adapter<PoiAdapter.ViewHolder>
         holder.nombre.text = p.nombre
         holder.descripcion.text = p.descripcion
         holder.sitio.setImageResource(p.sitioId)
-
+        holder.puntaje.rating.toInt()
     }
 
     override fun getItemCount(): Int {

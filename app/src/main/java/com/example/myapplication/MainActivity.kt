@@ -94,6 +94,8 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra("nombre", pois[position].nombre)
                 intent.putExtra("descripcion", pois[position].descripcion)
                 intent.putExtra("sitioId", pois[position].sitioId)
+                intent.putExtra("restaurantes", pois[position].restaurantes)
+                intent.putExtra("hoteles", pois[position].hoteles)
                 startActivity(intent)
             }
 

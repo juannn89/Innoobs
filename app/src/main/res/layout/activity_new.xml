@@ -29,6 +29,13 @@
             android:textColor="@color/white"
             android:textSize="25dp" />
 
+        <Button
+            android:id="@+id/btnMaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Mapa" />
+
         <!--<ImageView
             android:id="@+id/menu"
             android:layout_width="50dp"
@@ -68,11 +75,11 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/descripcion"
             android:layout_marginTop="1dp"
+            android:layout_marginBottom="2dp"
             android:paddingHorizontal="10dp"
             android:text="La Puerta del Reloj, Torre del Reloj o Boca del Puente o Plaza Internacional Carlos Campillo es la puerta de entrada principal al centro histórico de Cartagena de Indias en Colombia y la entrada original a la ciudad fortificada (o mejor conocido en la actualidad como el Sector y/o Ciudad Amurallada). Está ubicado entre las plazas de Independencia y de los Coches. El nombre 'Puerta del Reloj' responde al reloj con el que fue coronada la torre a principios del siglo XVIII. "
             android:textColor="@color/black"
-            android:textSize="18dp"
-            android:layout_marginBottom="2dp"/>
+            android:textSize="18dp" />
 
         <TextView
             android:id="@+id/situacion"
@@ -235,7 +242,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
-                android:text="The Clock Pub, Juan Valdez, Sabor de Montaña."
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:textSize="18dp"
                 android:textColor="@color/black"
